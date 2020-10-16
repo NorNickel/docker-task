@@ -1,0 +1,14 @@
+version: "3.8"
+services:
+
+  admin-server:
+    image: nornickel/admin-server-image:latest
+    ports:
+    - "9003:9003"
+
+  client-service:
+    image: nornickel/client-service-image:latest
+    ports:
+    - "8080:8080"
+    depends_on:
+      - admin-server
