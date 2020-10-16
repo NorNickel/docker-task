@@ -1,4 +1,4 @@
-# docker-task
+# docker-task: Minimal Solution
 
 ## Change url to SpringBootAdminURL
 
@@ -31,7 +31,7 @@ EXPOSE 8080
 ENTRYPOINT ["java", "-jar", "/client-service.jar"]
 ```
 ```bash
-$docker build -t nornickel/client-service-image .`
+$docker build -t nornickel/client-service-image .
 ```
 
 ---
